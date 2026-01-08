@@ -1,0 +1,53 @@
+import java.util.Scanner
+public class Main {
+    public static void main(String[] args) {
+    System.out.println("Enter a direction w,s,a,d ");
+    Scanner sc = new Scanner(System.in);
+    String direction = sc.next();
+    System.out.println("For how many seconds must the ship move?");
+    int time = sc.nextInt();
+    int maxspeedship = 5;
+    int minspeedship = 1;
+    int randomspeedship = (int)(Math.random() * (maxspeedship – minspeedship + 1) + minspeedship);
+    int newcoordinates = time * randomspeed ;
+    int maxcordxship = 50 ;
+    int mincordxship = -50 ;
+    int randomcordxship = (int)(Math.random() * (maxcordxship – mincordxship + 1) + mincordxship); // x coordinates of ship
+    int maxcordyship = 50 ;
+    int mincordyship = -50 ;
+    int randomcordyship = (int)(Math.random() * (maxcordyship – mincordyship + 1) + mincordyship);  // y coordinates of ship
+    int maxcordxmine = 50 ;
+    int mincordxmine = -50 ;
+    int randomcordxmine = (int)(Math.random() * (maxcordxmine – mincordxmine + 1) + mincordxmine); // x coordinates of mine
+    int maxcordymine = 50 ;
+    int mincordymine = -50 ;
+    int randomcordymine = (int)(Math.random() * (maxcordymine – mincordymine + 1) + mincordymine); // y coordinates of mine
+    int maxcordxenemy = 50 ;
+    int mincordxenemy = -50 ;
+    int randomcordxenemy = (int)(Math.random() * (maxcordxenemy – mincordxenemy + 1) + mincordxenemy); // x coordinates of enemy
+    int maxcordxenemy = 50 ;
+    int mincordyenemy = -50 ;
+    int randomcordyenemy = (int)(Math.random() * (maxcordyenemy – mincordyenemy + 1) + mincordyenemy); // y coordinates of enemy
+    System.out.println("The coordinates of the ship is" + randomcordxship , randomcordyship);
+    System.out.println("The coordinates of the mine is" + randomcordxmine , randomcordymine);
+    System.out.println("The coordinates of the ship is" + randomcordxenemy , randomcordyenemy);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    }
