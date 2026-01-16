@@ -279,7 +279,7 @@ public class Main {
                                 break;
                             } else {
                                 System.out.println("Please enter a , b , c , or d only as an answer choice.");
-                                answer = sc.nextLine();
+                                answer = sc.nextLine().trim().toLowerCase();
                             }
                         }
                         answersA.add(answer);
@@ -291,6 +291,7 @@ public class Main {
                         }
                         System.out.println();
                         System.out.println("Added Successfully");
+                        System.out.println();
                     } else {
                         System.out.println("Please type your question");
                         sc.nextLine();
@@ -311,7 +312,7 @@ public class Main {
                                 break;
                             } else {
                                 System.out.println("Please enter a , b , c , or d only as an answer choice.");
-                                answer = sc.nextLine();
+                                answer = sc.nextLine().trim().toLowerCase();
                             }
                         }
                         answersB.add(answer);
@@ -323,6 +324,7 @@ public class Main {
                         }
                         System.out.println();
                         System.out.println("Added Successfully");
+                        System.out.println();
                     }
                 } else { // REMOVING QUESTION
                     String remove = " ";
@@ -365,6 +367,7 @@ public class Main {
                         }
                         System.out.println();
                         System.out.println("Removed Successfully");
+                        System.out.println();
                     } else {
                         System.out.println("Which question number would you like to remove?");
                         System.out.println();
@@ -393,6 +396,7 @@ public class Main {
                         }
                         System.out.println();
                         System.out.println("Removed Successfully");
+                        System.out.println();
                     }
                 }
             } else {
